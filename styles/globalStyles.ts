@@ -146,7 +146,6 @@ table {
   font-weight: 500;
   src: url('/fonts/CircularStd-Medium.otf') format('opentype');
 }
-
 @font-face {
   font-family: 'Circular Std';
   font-weight: 500;
@@ -158,7 +157,6 @@ table {
   font-weight: 800;
   src: url('/fonts/CircularStd-Bold.otf') format('opentype');
 }
-
 @font-face {
   font-family: 'Circular Std';
   font-weight: 800;
@@ -170,7 +168,6 @@ table {
   font-weight: 900;
   src: url('/fonts/CircularStd-Black.otf') format('opentype');
 }
-
 @font-face {
   font-family: 'Circular Std';
   font-weight: 900;
