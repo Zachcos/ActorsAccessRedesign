@@ -1,3 +1,5 @@
+import { css } from 'styled-components';
+
 const colors = {
   prim_1: '#fcf1ed',
   prim_2: '#edd5cf',
@@ -50,4 +52,10 @@ const colors = {
   dang_9: '#3f1311',
 };
 
-export { colors };
+const font = (size: number, weight: number, style?: string) => css`
+  font-size: ${size}px;
+  font-weight: ${weight};
+  font-style: ${style};
+`;
+
+export { colors, font };
