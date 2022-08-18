@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from './variables';
 
 const GlobalStyle = createGlobalStyle`
 /*** Reset***/
@@ -177,6 +178,7 @@ table {
 /*** End font declaration ***/
 
 html {
+  background-color: ${colors.neut_1};
   font-family: 'Circular Std', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
