@@ -22,6 +22,7 @@ const LoginCard = styled.div`
   background-color: ${colors.white};
   border-radius: 8px;
   display: flex;
+  box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
   height: 400px;
   margin-bottom: 48px;
   width: 800px;
@@ -49,7 +50,6 @@ const Login = styled.div`
         margin-bottom: 8px;
         padding-left: 24px;
         width: 300px;
-        /* width: 336px; */
         &::placeholder {
           color: rgba(79, 90, 109, 0.5);
         }
