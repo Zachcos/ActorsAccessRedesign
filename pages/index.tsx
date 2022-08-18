@@ -8,7 +8,7 @@ const FullWrap = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding-top: 96px;
+  padding-top: 64px;
   width: 100%;
 `;
 
@@ -23,7 +23,7 @@ const LoginCard = styled.div`
   border-radius: 8px;
   display: flex;
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
-  height: 400px;
+  height: 425px;
   margin-bottom: 48px;
   width: 800px;
 `;
@@ -35,7 +35,7 @@ const Login = styled.div`
     padding-left: 32px;
     h2 {
       ${font(24, 900, `${colors.neut_8}`)};
-      margin: 48px 0 32px 0;
+      margin: 64px 0 32px 0;
     }
     .input {
       display: flex;
