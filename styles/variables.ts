@@ -11,14 +11,15 @@ const colors = {
   prim_8: '#46190e',
   prim_9: '#37160a',
 
-  neut_1: '#f8f9fa',
+  white: '#ffffff',
+  neut_1: '#f9f9fa',
   neut_2: '#eff3f4',
   neut_3: '#dee6eb',
   neut_4: '#c8d4dd',
   neut_5: '#a4b1bd',
   neut_6: '#7b8290',
   neut_7: '#515a6b',
-  neut_8: '#343d4d',
+  neut_8: '#323D4E',
   neut_9: '#232933',
 
   succ_1: '#edfcf8',
@@ -52,10 +53,16 @@ const colors = {
   dang_9: '#3f1311',
 };
 
-const font = (size: number, weight: number, style?: string) => css`
+const font = (
+  size: number,
+  weight: number,
+  color?: string,
+  style?: string
+) => css`
+  color: ${color};
   font-size: ${size}px;
-  font-weight: ${weight};
   font-style: ${style};
+  font-weight: ${weight};
 `;
 
 export { colors, font };
