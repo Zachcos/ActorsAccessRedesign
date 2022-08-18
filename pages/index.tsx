@@ -76,7 +76,7 @@ const Login = styled.div`
 `;
 
 const Info = styled.div`
-  ${font(18, 400, `${colors.neut_1}`)};
+  ${font(16, 400, `${colors.neut_1}`)};
   background: ${colors.neut_8};
   border-radius: 0 8px 8px 0;
   display: flex;
