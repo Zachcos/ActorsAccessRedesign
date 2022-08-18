@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { colors, font } from '../styles/variables';
+import { Facebook, Instagram, Twitter, Apple } from '../styles/icons';
 import styled from 'styled-components';
 
 const FullWrap = styled.div`
@@ -102,6 +103,9 @@ const Info = styled.div`
         justify-content: space-around;
         margin-bottom: 36px;
         width: 100%;
+        svg:hover {
+          cursor: pointer;
+        }
       }
       .download {
         display: flex;
@@ -116,9 +120,15 @@ const Info = styled.div`
           background: transparent;
           border-radius: 8px;
           border: 1px solid ${colors.neut_1};
+          display: flex;
+          justify-content: center;
+          align-items: center;
           cursor: pointer;
           height: 43px;
           width: 122px;
+          svg {
+            margin-right: 8px;
+          }
         }
       }
     }
@@ -129,11 +139,11 @@ const Info = styled.div`
     margin-left: 32px;
     width: 60%;
     h4 {
-      ${font(18, 900)};
+      ${font(18, 800)};
       margin-bottom: 12px;
     }
     p {
-      ${font(14, 800, '', 'italic')};
+      ${font(14, 500, '', 'italic')};
       cursor: pointer;
       margin-bottom: 12px;
     }
@@ -212,13 +222,16 @@ const Home: NextPage = () => {
             </ul>
             <div className='social'>
               <div className='icons'>
-                <span>F</span>
-                <span>I</span>
-                <span>T</span>
+                <Facebook />
+                <Instagram />
+                <Twitter />
               </div>
               <div className='download'>
                 <p>Get the Actors Access app</p>
-                <button>Download</button>
+                <button>
+                  <Apple />
+                  Download
+                </button>
               </div>
             </div>
           </div>
