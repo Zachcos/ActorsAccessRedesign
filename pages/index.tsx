@@ -21,28 +21,165 @@ const LoginCard = styled.div`
   background-color: ${colors.white};
   border-radius: 8px;
   display: flex;
-  height: 500px;
+  height: 400px;
+  margin-bottom: 48px;
   width: 800px;
 `;
 
 const Login = styled.div`
-  padding-left: 32px;
+  position: relative;
   width: 50%;
-  h2 {
-    ${font(24, 900, `${colors.neut_8}`)};
-    margin: 92px 0 32px 0;
+  .formWrap {
+    padding-left: 32px;
+    h2 {
+      ${font(24, 900, `${colors.neut_8}`)};
+      margin: 48px 0 32px 0;
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      input {
+        ${font(16, 400, `${colors.neut_8}`)};
+        background: ${colors.neut_1};
+        border-radius: 8px;
+        border: none;
+        height: 52px;
+        margin-bottom: 8px;
+        padding-left: 24px;
+        width: 300px;
+        /* width: 336px; */
+        &::placeholder {
+          color: rgba(79, 90, 109, 0.5);
+        }
+        &:focus {
+          //TODO - Remove browser default border and add custom focus styling
+        }
+      }
+      a {
+        ${font(12, 400, `${colors.neut_6}`, 'italic')};
+        margin-left: 24px;
+      }
+    }
   }
-  .input {
+  button {
+    ${font(18, 900, `${colors.white}`)}
+    background: ${colors.prim_5};
+    border-radius: 0 0 0 8px;
+    border: none;
+    bottom: 0;
+    cursor: pointer;
+    height: 71px;
+    position: absolute;
+    width: 100%;
+  }
+`;
+
+const Info = styled.div`
+  ${font(18, 400, `${colors.neut_1}`)};
+  background: ${colors.neut_8};
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 32px 0 32px;
+    .extras {
+      width: 50%;
+      li {
+        cursor: pointer;
+        margin-bottom: 12px;
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      .icons {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 36px;
+        width: 100%;
+      }
+      .download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          ${font(12, 400)}
+          margin-bottom: 8px;
+        }
+        button {
+          ${font(14, 500, `${colors.neut_1}`)}
+          background: transparent;
+          border-radius: 8px;
+          border: 1px solid ${colors.neut_1};
+          cursor: pointer;
+          height: 43px;
+          width: 122px;
+        }
+      }
+    }
+  }
+  .bottom {
     display: flex;
     flex-direction: column;
-    input {
-      ${font(16, 400)};
-      background: ${colors.neut_1};
-      border: none;
-      border-radius: 8px;
-      height: 52px;
-      width: 336px;
+    margin-left: 32px;
+    width: 60%;
+    h4 {
+      ${font(18, 900)};
+      margin-bottom: 12px;
     }
+    p {
+      ${font(14, 800, '', 'italic')};
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+    ul {
+      ${font(12, 400)};
+      display: flex;
+      margin-bottom: 24px;
+      li {
+        margin-right: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+`;
+
+const Register = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  .divider {
+    height: 2px;
+    width: 100%;
+    background: ${colors.neut_2};
+    position: absolute;
+    top: 6px;
+  }
+  p {
+    ${font(14, 400, `${colors.neut_4}`)}
+    background-color: ${colors.neut_1};
+    height: 10px;
+    padding: 0 10px;
+    z-index: 100;
+    margin-bottom: 24px;
+  }
+  button {
+    ${font(18, 900, `${colors.prim_5}`)}
+    border: none;
+    border: 2px solid ${colors.prim_5};
+    border-radius: 8px;
+    width: 500px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
   }
 `;
 
@@ -52,27 +189,27 @@ const Home: NextPage = () => {
       <HeroText>Actors Access</HeroText>
       <LoginCard>
         <Login>
-          <h2>Member sign in</h2>
-          <div className='input input__user'>
-            <input type='text' name='username' placeholder='Username' />
-            <a href='#'>Forgot your username?</a>
-          </div>
-          <div className='input input__pass'>
-            <input type='password' name='password' placeholder='Password' />
-            <a href='#'>Forgot your password?</a>
+          <div className='formWrap'>
+            <h2>Member sign in</h2>
+            <div className='input input__user'>
+              <input type='text' name='username' placeholder='Username' />
+              <a href='#'>Forgot your username?</a>
+            </div>
+            <div className='input input__pass'>
+              <input type='password' name='password' placeholder='Password' />
+              <a href='#'>Forgot your password?</a>
+            </div>
           </div>
           <button>LOG IN</button>
         </Login>
-        <div className='info'>
+        <Info>
           <div className='top'>
-            <div className='extras'>
-              <ul>
-                <li>Extras</li>
-                <li>Casting Directors</li>
-                <li>Talent Reps</li>
-                <li>Get sides</li>
-              </ul>
-            </div>
+            <ul className='extras'>
+              <li>Extras</li>
+              <li>Casting Directors</li>
+              <li>Talent Reps</li>
+              <li>Get sides</li>
+            </ul>
             <div className='social'>
               <div className='icons'>
                 <span>F</span>
@@ -81,13 +218,13 @@ const Home: NextPage = () => {
               </div>
               <div className='download'>
                 <p>Get the Actors Access app</p>
-                <button>download</button>
+                <button>Download</button>
               </div>
             </div>
           </div>
           <div className='bottom'>
             <h4>Breakdown Services Ltd.</h4>
-            <p>Preview Recent Postings</p>
+            <p>Preview Recent Postings!</p>
             <ul>
               <li>About us</li>
               <li>FAQ</li>
@@ -95,11 +232,14 @@ const Home: NextPage = () => {
               <li>Register</li>
             </ul>
           </div>
-        </div>
+        </Info>
       </LoginCard>
 
-      <div className='divider'>--- new to actors access? ---</div>
-      <button>SIGN UP</button>
+      <Register>
+        <div className='divider' />
+        <p>New to Actors Access?</p>
+        <button>SIGN UP</button>
+      </Register>
     </FullWrap>
   );
 };
