@@ -10,12 +10,11 @@ const FullWrap = styled.div`
   height: 100%;
   padding-top: 64px;
   width: 100%;
-`;
-
-const HeroText = styled.h1`
-  ${font(72, 900)};
-  color: ${colors.prim_5};
-  margin-bottom: 36px;
+  .heroText {
+    ${font(72, 900)};
+    color: ${colors.prim_5};
+    margin-bottom: 36px;
+  }
 `;
 
 const LoginCard = styled.div`
@@ -196,7 +195,7 @@ const Register = styled.div`
 const Landing: NextPage = () => {
   return (
     <FullWrap>
-      <HeroText>Actors Access</HeroText>
+      <h1 className='heroText'>Actors Access</h1>
       <LoginCard>
         <Login>
           <div className='formWrap'>
