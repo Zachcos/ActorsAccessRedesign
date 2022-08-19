@@ -193,7 +193,7 @@ const Register = styled.div`
   }
 `;
 
-const Home: NextPage = () => {
+const Landing: NextPage = () => {
   return (
     <FullWrap>
       <HeroText>Actors Access</HeroText>
@@ -257,4 +257,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Landing;
