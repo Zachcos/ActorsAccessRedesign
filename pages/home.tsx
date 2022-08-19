@@ -1,12 +1,14 @@
 import type { NextPage } from 'next';
-import styled from 'styled-components';
-import { colors, font } from '../styles/variables';
+import NavBar from '../components/navBar';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>this is the home page</h1>
-    </div>
+    <>
+      <NavBar />
+      <div>
+        <h1>this is the home page</h1>
+      </div>
+    </>
   );
 };
 
