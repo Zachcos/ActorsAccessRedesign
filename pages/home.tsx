@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <>
       <SideBar />
-      <div>
+      <div style={{ marginLeft: '180px' }}>
         <h1>this is the home page</h1>
       </div>
     </>
