@@ -70,7 +70,7 @@ const NavBarWrapper = styled.div`
   }
 `;
 
-const NavBar = () => {
+const SideBar = () => {
   return (
     <NavBarWrapper>
       <div className='navInner'>
@@ -112,4 +112,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default SideBar;
