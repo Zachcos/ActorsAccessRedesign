@@ -1,19 +1,8 @@
-import styled from 'styled-components';
-import { colors } from './variables';
-
-const Icon = styled.svg`
-  fill: ${colors.neut_1};
-`;
-
 const Facebook = () => (
-  <Icon width='22px' height='20px' viewBox='0 0 22 20' version='1.1'>
+  <svg width='22px' height='20px' viewBox='0 0 22 20' version='1.1'>
     <title>Facebook</title>
     <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
-      <g
-        id='Landing'
-        transform='translate(-1034.000000, -310.000000)'
-        fill='#EEF3F5'
-      >
+      <g id='Landing' transform='translate(-1034.000000, -310.000000)'>
         <g id='Right-panel' transform='translate(800.000000, 274.000000)'>
           <g id='Social-links' transform='translate(234.000000, 36.000000)'>
             <path
@@ -24,18 +13,14 @@ const Facebook = () => (
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 const Instagram = () => (
-  <Icon width='22px' height='20px' viewBox='0 0 22 20' version='1.1'>
+  <svg width='22px' height='20px' viewBox='0 0 22 20' version='1.1'>
     <title>Instagram</title>
     <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
-      <g
-        id='Landing'
-        transform='translate(-1134.000000, -310.000000)'
-        fill='#EEF3F5'
-      >
+      <g id='Landing' transform='translate(-1134.000000, -310.000000)'>
         <g id='Right-panel' transform='translate(800.000000, 274.000000)'>
           <g id='Social-links' transform='translate(234.000000, 36.000000)'>
             <path
@@ -46,18 +31,14 @@ const Instagram = () => (
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 const Twitter = () => (
-  <Icon width='26px' height='20px' viewBox='0 0 26 20' version='1.1'>
+  <svg width='26px' height='20px' viewBox='0 0 26 20' version='1.1'>
     <title>Twitter</title>
     <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
-      <g
-        id='Landing'
-        transform='translate(-1081.000000, -310.000000)'
-        fill='#EEF3F5'
-      >
+      <g id='Landing' transform='translate(-1081.000000, -310.000000)'>
         <g id='Right-panel' transform='translate(800.000000, 274.000000)'>
           <g id='Social-links' transform='translate(234.000000, 36.000000)'>
             <path
@@ -68,18 +49,14 @@ const Twitter = () => (
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 const Apple = () => (
-  <Icon width='16px' height='19px' viewBox='0 0 16 19' version='1.1'>
+  <svg width='16px' height='19px' viewBox='0 0 16 19' version='1.1'>
     <title>Apple</title>
     <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
-      <g
-        id='Landing'
-        transform='translate(-1050.000000, -405.000000)'
-        fill='#EEF3F5'
-      >
+      <g id='Landing' transform='translate(-1050.000000, -405.000000)'>
         <g id='Right-panel' transform='translate(800.000000, 274.000000)'>
           <g id='Download-app' transform='translate(222.000000, 96.000000)'>
             <g id='Button-text' transform='translate(28.000000, 35.000000)'>
@@ -92,23 +69,19 @@ const Apple = () => (
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 const Arrow = () => (
-  <Icon width='10px' height='7px' viewBox='0 0 10 7' version='1.1'>
-    <title>down arrow icon</title>
+  <svg width='10px' height='10px' viewBox='0 0 10 10' version='1.1'>
+    <title>down arrow svg</title>
     <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
-      <g
-        id='Home-Page'
-        transform='translate(-498.000000, -43.000000)'
-        fill='#FFFFFF'
-      >
+      <g id='Home-Page' transform='translate(-498.000000, -43.000000)'>
         <g id='Nav-Bar' transform='translate(0.000000, -1.000000)'>
           <g id='Nav-Links' transform='translate(330.000000, 36.000000)'>
             <g id='breakdowns' transform='translate(74.000000, 0.000000)'>
               <polygon
-                id='down-arrow-icon'
+                id='down-arrow-svg'
                 points='98.7336724 14.415 94 9.707 95.4220125 8.293 98.7336724 11.586 102.045332 8.293 103.467345 9.707'
               ></polygon>
             </g>
@@ -116,12 +89,12 @@ const Arrow = () => (
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 const Cart = () => (
-  <Icon width='19px' height='16px' viewBox='0 0 19 16' version='1.1'>
-    <title>Cart Icon</title>
+  <svg width='19px' height='16px' viewBox='0 0 19 16' version='1.1'>
+    <title>Cart svg</title>
     <defs>
       <polygon
         id='path-1'
@@ -136,16 +109,14 @@ const Cart = () => (
       <g id='Home-Page' transform='translate(-1473.000000, -47.000000)'>
         <g id='Nav-Bar' transform='translate(0.000000, -1.000000)'>
           <g id='Links' transform='translate(1473.555556, 16.000000)'>
-            <g id='Cart-Icon' transform='translate(0.000000, 32.000000)'>
+            <g id='Cart-svg' transform='translate(0.000000, 32.000000)'>
               <path
                 d='M7.77777778,15.8345215 L6.66666667,15.8345215 C6.05333333,15.8345215 5.55555556,15.361594 5.55555556,14.7788797 L5.55555556,13.7232379 C5.55555556,13.1405236 6.05333333,12.6675961 6.66666667,12.6675961 L7.77777778,12.6675961 C8.39111111,12.6675961 8.88888889,13.1405236 8.88888889,13.7232379 L8.88888889,14.7788797 C8.88888889,15.361594 8.39111111,15.8345215 7.77777778,15.8345215'
                 id='Fill-1'
-                fill='#EEF3F5'
               ></path>
               <path
                 d='M14.4444444,15.8345215 L13.3333333,15.8345215 C12.72,15.8345215 12.2222222,15.361594 12.2222222,14.7788797 L12.2222222,13.7232379 C12.2222222,13.1405236 12.72,12.6675961 13.3333333,12.6675961 L14.4444444,12.6675961 C15.0577778,12.6675961 15.5555556,13.1405236 15.5555556,13.7232379 L15.5555556,14.7788797 C15.5555556,15.361594 15.0577778,15.8345215 14.4444444,15.8345215'
                 id='Fill-3'
-                fill='#EEF3F5'
               ></path>
               <g id='Group-7' transform='translate(2.222444, 3.166820)'>
                 <mask id='mask-2' fill='white'>
@@ -155,7 +126,6 @@ const Cart = () => (
                 <path
                   d='M12.4655556,8.44513444 L3.09,8.44513444 C2.58,8.44513444 2.13555556,8.11577419 2.01111111,7.64601359 L1.97372982e-15,0 L15.5555556,0 L13.5433333,7.64601359 C13.42,8.11577419 12.9755556,8.44513444 12.4655556,8.44513444'
                   id='Fill-5'
-                  fill='#EEF3F5'
                   mask='url(#mask-2)'
                 ></path>
               </g>
@@ -166,7 +136,6 @@ const Cart = () => (
                 <g id='Clip-9'></g>
                 <polygon
                   id='Fill-8'
-                  fill='#EEF3F5'
                   mask='url(#mask-4)'
                   points='4.515 9.87130652 1.45277778 2.11128361 -0.000555555556 2.11128361 -0.000555555556 0 2.99166667 0 6.59611111 9.13024597'
                 ></polygon>
@@ -176,31 +145,27 @@ const Cart = () => (
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 const MailEmpty = () => (
-  <Icon width='18px' height='16px' viewBox='0 0 18 16' version='1.1'>
-    <title>email icon (empty)</title>
+  <svg width='18px' height='16px' viewBox='0 0 18 16' version='1.1'>
+    <title>email svg (empty)</title>
     <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
-      <g
-        id='Home-Page'
-        transform='translate(-1474.000000, -15.000000)'
-        fill='#EEF3F5'
-      >
+      <g id='Home-Page' transform='translate(-1474.000000, -15.000000)'>
         <g id='Nav-Bar' transform='translate(0.000000, -1.000000)'>
           <g id='Links' transform='translate(1473.555556, 16.000000)'>
             <g id='Email' transform='translate(0.444444, 0.000000)'>
               <path
                 d='M13.3333333,9 L12.2222222,12 L5.55555556,12 L4.44444444,9 L2.22222222,9 L5.55555556,1 L12.2222222,1 L15.5555556,9 L13.3333333,9 Z M13.1255556,0.284 C13.0333333,0.11 12.8388889,0 12.6244444,0 L5.15333333,0 C4.93888889,0 4.74333333,0.111 4.65111111,0.285 L0,9.054 L0,15 C0,15.552 0.496666667,16 1.11111111,16 L16.6666667,16 C17.2811111,16 17.7777778,15.552 17.7777778,15 L17.7777778,9 L13.1255556,0.284 Z'
-                id='email-icon-(empty)'
+                id='email-svg-(empty)'
               ></path>
             </g>
           </g>
         </g>
       </g>
     </g>
-  </Icon>
+  </svg>
 );
 
 export { Facebook, Instagram, Twitter, Apple, Arrow, Cart, MailEmpty };
