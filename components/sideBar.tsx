@@ -4,6 +4,7 @@ import { Arrow, Cart, MailEmpty } from '../styles/icons';
 
 const SideBarWrapper = styled.div`
   background-color: ${colors.neut_8};
+  box-shadow: 4px 0 12px rgba(121, 130, 145, 0.4);
   display: flex;
   flex-direction: column;
   height: 100vh;
