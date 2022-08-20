@@ -102,6 +102,9 @@ const Info = styled.div`
         justify-content: space-around;
         margin-bottom: 36px;
         width: 100%;
+        svg g {
+          fill: ${colors.neut_1};
+        }
         svg:hover {
           cursor: pointer;
         }
@@ -127,6 +130,9 @@ const Info = styled.div`
           width: 122px;
           svg {
             margin-right: 8px;
+            g {
+              fill: ${colors.neut_1};
+            }
           }
         }
       }
