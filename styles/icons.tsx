@@ -305,6 +305,20 @@ const CheckMark = () => (
   </svg>
 );
 
+const Calendar = () => (
+  <svg viewBox='0 0 16 16'>
+    <g id='Layer_2' data-name='Layer 2'>
+      <g id='Layer_1-2' data-name='Layer 1'>
+        <path
+          className='cls-1'
+          d='M15,2H13V0H11V2H5V0H3V2H1A1,1,0,0,0,0,3V15a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V3A1,1,0,0,0,15,2ZM14,14H2V6H14Z'
+        />
+        <rect className='cls-1' x='8' y='8' width='4' height='4' />
+      </g>
+    </g>
+  </svg>
+);
+
 export {
   Facebook,
   Instagram,
@@ -325,4 +339,5 @@ export {
   SignOut,
   Warning,
   CheckMark,
+  Calendar,
 };
