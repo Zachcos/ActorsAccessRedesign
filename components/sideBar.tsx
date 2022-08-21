@@ -30,6 +30,9 @@ const SideBarWrapper = styled.div`
     a:first-child {
       margin-bottom: 12px;
     }
+    svg {
+      width: 16px;
+    }
     .link_cart svg g,
     .link_mail svg g {
       fill: ${colors.neut_5};
