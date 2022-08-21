@@ -102,6 +102,10 @@ const Info = styled.div`
         justify-content: space-around;
         margin-bottom: 36px;
         width: 100%;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
         svg g {
           fill: ${colors.neut_1};
         }
@@ -129,7 +133,10 @@ const Info = styled.div`
           height: 43px;
           width: 122px;
           svg {
+            height: 16px;
             margin-right: 8px;
+            margin-top: -3px;
+            width: 16px;
             g {
               fill: ${colors.neut_1};
             }
