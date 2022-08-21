@@ -39,7 +39,7 @@ const SideBarWrapper = styled.div`
     }
   }
   .navLinks {
-    ${font(16, 500, `${colors.neut_1}`)};
+    ${font(14, 500, `${colors.neut_1}`)};
     margin-right: 24px;
     text-align: right;
     li {
@@ -62,7 +62,7 @@ const SideBarWrapper = styled.div`
     display: flex;
     flex-direction: column;
     button {
-      ${font(14, 500)};
+      ${font(12, 500)};
       border-radius: 8px;
       cursor: pointer;
       height: 42px;
