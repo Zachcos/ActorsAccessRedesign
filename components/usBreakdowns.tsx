@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 
 const Wrapper = styled.div`
-  height: 430px;
+  height: 410px;
+  padding-top: 24px;
   width: 340px;
   h3 {
     ${font(20, 900, `${colors.neut_7}`)};
