@@ -31,6 +31,12 @@ const Card = styled.div`
     p {
       line-height: 1.2rem;
       margin-bottom: 1.8rem;
+      i {
+        ${font(12, 800)};
+      }
+      a {
+        color: ${colors.neut_6};
+      }
     }
   }
 `;
@@ -49,12 +55,11 @@ const ReminderCard = () => (
         current and accurate information about you.
       </p>
       <p>
-        <span className='emphasis'>Actors Access</span> uses your information to
-        alert vou via email when new Breakdowns on actors access match your
-        profile. PLEASE NOTE, if vou do not wish to receive information about
-        certain types of roles, or if vou do not wish to receive ANY
-        notifications, vou may update vour preferences on the{' '}
-        <a href='#'>My Account</a> page.
+        <i>Actors Access</i> uses your information to alert vou via email when
+        new Breakdowns on actors access match your profile. PLEASE NOTE, if vou
+        do not wish to receive information about certain types of roles, or if
+        vou do not wish to receive ANY notifications, vou may update vour
+        preferences on the <a href='#'>My Account</a> page.
       </p>
     </div>
   </Card>
