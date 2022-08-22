@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <SideBar />
-      <div style={{ marginLeft: '180px' }}>
+      <div style={{ marginLeft: '180px', padding: '24px 0 0 32px' }}>
         <UserCard />
       </div>
     </>
