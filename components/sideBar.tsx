@@ -31,7 +31,7 @@ const SideBarWrapper = styled.div`
       margin-bottom: 12px;
     }
     svg {
-      width: 16px;
+      width: 14px;
     }
     .link_cart svg g,
     .link_mail svg g {
