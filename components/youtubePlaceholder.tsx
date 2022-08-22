@@ -6,7 +6,7 @@ const YoutubePlaceholder = () => (
       alignItems: 'center',
       background: `${colors.neut_4}`,
       display: 'flex',
-      height: '260px',
+      height: '220px',
       justifyContent: 'center',
       width: '416px',
     }}
