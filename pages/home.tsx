@@ -2,14 +2,25 @@ import type { NextPage } from 'next';
 import SideBar from '../components/sideBar';
 import UserCard from '../components/userCard';
 import ReminderCard from '../components/reminderCard';
+import UsBreakdowns from '../components/usBreakdowns';
 
 const Home: NextPage = () => {
   return (
     <>
       <SideBar />
-      <div style={{ marginLeft: '180px', padding: '24px 0 0 32px' }}>
+      <div
+        style={{
+          marginLeft: '180px',
+          padding: '24px 0 0 32px',
+          display: 'flex',
+          flexDirection: 'column',
+          flexWrap: 'wrap',
+          maxHeight: '100vh',
+        }}
+      >
         <UserCard />
         <ReminderCard />
+        <UsBreakdowns />
       </div>
     </>
   );
