@@ -19,6 +19,7 @@ const Card = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
   height: 456px;
+  margin-bottom: 32px;
   width: 466px;
   .top {
     background: ${colors.neut_8};
