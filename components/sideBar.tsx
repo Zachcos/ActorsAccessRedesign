@@ -11,7 +11,7 @@ const SideBarWrapper = styled.div`
   position: fixed;
   width: 180px;
   .heroText {
-    ${font(36, 900, `${colors.prim_5}`)};
+    ${font(24, 900, `${colors.prim_5}`)};
     margin: 24px 0 32px 0;
     text-align: center;
   }
@@ -44,7 +44,7 @@ const SideBarWrapper = styled.div`
     text-align: right;
     li {
       cursor: pointer;
-      margin-bottom: 36px;
+      margin-bottom: 24px;
       &:last-child {
         margin-bottom: 48px;
       }
