@@ -3,9 +3,9 @@ import { colors, font } from '../styles/variables';
 
 const Wrapper = styled.div`
   height: 430px;
-  width: 370px;
+  width: 340px;
   h3 {
-    ${font(24, 900, `${colors.neut_7}`)};
+    ${font(20, 900, `${colors.neut_7}`)};
     margin-bottom: 16px;
   }
   .primaryMarkets {
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     width: 338px;
     a {
-      ${font(16, 500, `${colors.neut_7}`)};
+      ${font(14, 500, `${colors.neut_7}`)};
       margin-bottom: 16px;
       text-decoration: none;
       width: 50%;
@@ -29,7 +29,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     a {
-      ${font(14, 400, `${colors.neut_7}`)};
+      ${font(12, 400, `${colors.neut_7}`)};
       margin-bottom: 16px;
       text-decoration: none;
     }
