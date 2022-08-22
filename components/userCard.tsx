@@ -18,32 +18,32 @@ import {
 const Card = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
-  height: 456px;
+  height: 400px;
   margin-bottom: 32px;
   width: 466px;
   .top {
     background: ${colors.neut_8};
     border-radius: 8px 8px 0 0;
-    height: 114px;
+    height: 98px;
     width: 100%;
     h2 {
-      ${font(30, 800, `${colors.neut_2}`)};
-      margin-bottom: 24px;
+      ${font(24, 800, `${colors.neut_2}`)};
+      margin-bottom: 16px;
       padding: 24px 0 0 24px;
     }
     .statusLinks {
       display: flex;
       margin-left: 24px;
       a {
-        ${font(14, 400, `${colors.neut_5}`)};
+        ${font(12, 400, `${colors.neut_5}`)};
         text-decoration: none;
         &:first-child {
-          margin-right: 32px;
+          margin-right: 24px;
         }
         svg {
           fill: ${colors.neut_5};
-          height: 16px;
-          margin-right: 12px;
+          width: 14px;
+          margin-right: 8px;
         }
       }
     }
@@ -54,8 +54,8 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 205px;
-    padding: 48px 0 0 24px;
+    height: 170px;
+    padding: 32px 0 0 24px;
     a {
       ${font(16, 400, `${colors.neut_8}`)};
       margin-bottom: 24px;
@@ -72,19 +72,19 @@ const Card = styled.div`
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
     display: flex;
-    height: 138px;
+    height: 132px;
     justify-content: space-between;
     padding: 24px;
     .footerLinks {
       display: flex;
       flex-direction: column;
       a {
-        ${font(14, 400, `${colors.neut_6}`)}
+        ${font(12, 400, `${colors.neut_6}`)}
         margin-bottom: 18px;
         text-decoration: none;
         svg {
           fill: ${colors.neut_6};
-          width: 16px;
+          width: 14px;
           margin-right: 12px;
         }
       }
@@ -94,12 +94,12 @@ const Card = styled.div`
       flex-direction: column;
       justify-content: flex-end;
       a {
-        ${font(14, 400, `${colors.neut_5}`)}
+        ${font(12, 400, `${colors.neut_5}`)}
         text-decoration: none;
         svg {
           fill: ${colors.neut_5};
           margin-right: 8px;
-          width: 14px;
+          width: 12px;
         }
       }
     }
