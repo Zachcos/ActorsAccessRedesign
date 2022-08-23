@@ -1,36 +1,33 @@
-import type { NextPage } from 'next';
+import type { ReactElement } from 'react';
 import styled from 'styled-components';
-import SideBar from '../components/sideBar';
 import UserCard from '../components/userCard';
 import ReminderCard from '../components/reminderCard';
 import UsBreakdowns from '../components/usBreakdowns';
 import YoutubePlaceholder from '../components/youtubePlaceholder';
+import Layout from '../components/layout';
 
 const HomeWrapper = styled.div`
   display: flex;
-  margin-left: 180px;
-  padding: 24px 0 0 32px;
   .one {
     margin-right: 48px;
   }
 `;
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <>
-      <SideBar />
-      <HomeWrapper>
-        <div className='one'>
-          <UserCard />
-          <ReminderCard />
-        </div>
-        <div className='two'>
-          <UsBreakdowns />
-          <YoutubePlaceholder />
-        </div>
-      </HomeWrapper>
-    </>
+    <HomeWrapper>
+      <div className='one'>
+        <UserCard />
+        <ReminderCard />
+      </div>
+      <div className='two'>
+        <UsBreakdowns />
+        <YoutubePlaceholder />
+      </div>
+    </HomeWrapper>
   );
-};
+}
 
-export default Home;
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
+};
