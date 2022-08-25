@@ -40,13 +40,13 @@ const SideBarWrapper = styled.div`
   }
   .navLinks {
     ${font(14, 500, `${colors.neut_1}`)};
-    margin-right: 24px;
+    margin: 0 24px 48px 0;
     text-align: right;
     li {
       cursor: pointer;
       margin-bottom: 24px;
       &:last-child {
-        margin-bottom: 48px;
+        margin-bottom: 0;
       }
       svg {
         margin-left: 4px;
