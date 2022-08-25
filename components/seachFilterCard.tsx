@@ -7,8 +7,8 @@ const CardWrapper = styled.div`
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
   box-sizing: border-box;
   display: flex;
-  height: 321px;
-  width: 997px;
+  height: 280px;
+  width: 900px;
 `;
 
 const Search = styled.div`
@@ -31,7 +31,7 @@ const Search = styled.div`
       select,
       input {
         //TODO - Style browser/OS default focus styling;
-        ${font(14, 500, `${colors.neut_8}`)};
+        ${font(12, 500, `${colors.neut_8}`)};
         background: ${colors.neut_1};
         border-radius: 8px;
         border: none;
@@ -41,13 +41,13 @@ const Search = styled.div`
       select,
       input[type='date'] {
         height: 42px;
-        width: 175px;
+        width: 140px;
       }
       input[type='text'] {
         // TODO - Change default date picker?
         border-radius: 8px;
         height: 42px;
-        width: 233px;
+        width: 200px;
       }
     }
   }
@@ -81,13 +81,14 @@ const Filter = styled.div`
       margin-bottom: 8px;
     }
     select {
+      ${font(12, 400, `${colors.neut_8}`)};
       background: ${colors.neut_1};
       border-radius: 8px;
       border: none;
       box-sizing: border-box;
       height: 42px;
       padding: 0 16px;
-      width: 374px;
+      width: 200px;
     }
   }
   .checkForm {
