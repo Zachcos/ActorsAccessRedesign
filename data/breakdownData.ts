@@ -1,4 +1,4 @@
-const data = [
+const breakdownData = [
   {
     id: '1',
     dateTime: '2022-08-03T16:28',
@@ -91,4 +91,4 @@ const data = [
   },
 ];
 
-export default data;
+export default breakdownData;
