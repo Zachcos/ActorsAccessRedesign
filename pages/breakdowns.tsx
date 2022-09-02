@@ -1,10 +1,9 @@
 import type { ReactElement } from 'react';
-import { GetStaticProps } from 'next';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SearchFilterCard from '../components/seachFilterCard';
-import BreakdownTable from '../components/breakdownsTable';
-import breakdownData from '../data/breakdownData';
+import BreakdownsTableOptions from '../components/breakdownsTableOptions';
+import BreakdownsTable from '../components/breakdownsTable';
 
 const Wrapper = styled.div`
   align-items: center;
@@ -13,23 +12,12 @@ const Wrapper = styled.div`
   margin-left: -32px;
 `;
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      data: breakdownData,
-    },
-  };
-};
-
-interface Props {
-  data: BreakdownProps[];
-}
-
-const Breakdowns = ({ data }: Props) => {
+const Breakdowns = () => {
   return (
     <Wrapper>
       <SearchFilterCard />
-      <BreakdownTable breakdowns={data} />
+      <BreakdownsTableOptions />
+      <BreakdownsTable />
     </Wrapper>
   );
 };
