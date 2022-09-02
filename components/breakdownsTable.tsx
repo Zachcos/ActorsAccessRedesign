@@ -110,7 +110,6 @@ const Table = styled.table`
       width: 100%;
       &_date {
         flex-basis: 102px;
-        width: 102px;
         svg {
           fill: ${colors.neut_2};
           margin-left: 8px;
@@ -133,9 +132,42 @@ const Table = styled.table`
       }
     }
   }
+  tbody {
+    ${font(12, 400, `${colors.neut_8}`)};
+    .item {
+      align-items: center;
+      display: flex;
+      height: 66px;
+      padding-left: 24px;
+      text-align: left;
+      width: 100%;
+      &_date {
+        flex-basis: 102px;
+      }
+      &_title {
+        flex-basis: 400px;
+      }
+      &_type {
+        width: 140px;
+      }
+      &_casting {
+        width: 300px;
+      }
+      &_start {
+        width: 110px;
+      }
+      &_union {
+        width: 80px;
+      }
+    }
+  }
 `;
 
-const BreakdownTable = () => {
+interface Props {
+  breakdowns: BreakdownProps[];
+}
+
+const BreakdownTable = ({ breakdowns }: Props) => {
   return (
     <Wrapper>
       <TableOptions>
@@ -180,6 +212,18 @@ const BreakdownTable = () => {
             <th className='heading_union'>Union</th>
           </tr>
         </thead>
+        <tbody>
+          {breakdowns.map((item: BreakdownProps) => (
+            <tr key={item.id} className='item'>
+              <td className='item_date'>{item.dateTime}</td>
+              <td className='item_title'>{item.title}</td>
+              <td className='item_type'>{item.type}</td>
+              <td className='item_casting'>{item.casting}</td>
+              <td className='item_startDate'>{item.startDate}</td>
+              <td className='item_union'>{item.union}</td>
+            </tr>
+          ))}
+        </tbody>
       </Table>
     </Wrapper>
   );

@@ -13,7 +13,7 @@ const HomeWrapper = styled.div`
   }
 `;
 
-export default function Home() {
+const Home = () => {
   return (
     <HomeWrapper>
       <div className='one'>
@@ -26,8 +26,10 @@ export default function Home() {
       </div>
     </HomeWrapper>
   );
-}
+};
 
 Home.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
+
+export default Home;

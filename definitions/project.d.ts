@@ -1,5 +1,6 @@
 interface BreakdownProps {
   id: number;
+  dateTime: string;
   title: string;
   type: string;
   casting: string;
