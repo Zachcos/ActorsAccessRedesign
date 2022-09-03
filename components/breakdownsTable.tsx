@@ -11,14 +11,13 @@ import BreakdownsTableOptions from './breakdownsTableOptions';
 import breakdownData from '../data/breakdownData';
 
 const Wrapper = styled.div`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 72px;
+  padding: 0 40px 100px 40px;
   width: 100%;
-
-  box-sizing: border-box;
-  padding: 0 40px;
 `;
 
 const Table = styled.table`
