@@ -82,7 +82,7 @@ const columns = [
 ];
 
 const BreakdownsTable = () => {
-  const [data, setData] = useState([...breakdownData]);
+  const [data] = useState([...breakdownData]);
   const table = useReactTable({
     data,
     columns,
