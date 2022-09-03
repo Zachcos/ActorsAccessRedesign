@@ -7,6 +7,7 @@ import {
 } from '@tanstack/react-table';
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
+import PaginationButtons from './paginationButtons';
 import BreakdownsTableOptions from './breakdownsTableOptions';
 import breakdownData from '../data/breakdownData';
 
@@ -21,6 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Table = styled.table`
+  margin-bottom: 32px;
   width: 100%;
   thead {
     ${font(12, 500, `${colors.neut_2}`)};
@@ -120,6 +122,7 @@ const BreakdownsTable = () => {
             ))}
           </tbody>
         </Table>
+        <PaginationButtons />
       </div>
     </Wrapper>
   );
