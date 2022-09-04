@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
-import { Arrow, Cart, MailEmpty } from '../styles/icons';
+import { Cart, MailEmpty } from '../styles/icons';
+import NavLinks from './navLinks';
 
 const SideBarWrapper = styled.div`
   background-color: ${colors.neut_8};
@@ -36,25 +37,6 @@ const SideBarWrapper = styled.div`
     .link_cart svg g,
     .link_mail svg g {
       fill: ${colors.neut_5};
-    }
-  }
-  .navLinks {
-    ${font(14, 500, `${colors.neut_1}`)};
-    margin: 0 24px 48px 0;
-    text-align: right;
-    li {
-      cursor: pointer;
-      margin-bottom: 24px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      svg {
-        margin-left: 4px;
-        transform: rotate(-90deg);
-      }
-      svg g {
-        fill: ${colors.neut_1};
-      }
     }
   }
   .buttons {
@@ -97,7 +79,7 @@ const SideBar = () => {
         </a>
       </div>
       <ul className='navLinks'>
-        <li>home</li>
+        {/* <li>home</li>
         <li>
           breakdowns <Arrow />
         </li>
@@ -113,7 +95,8 @@ const SideBar = () => {
         </li>
         <li>
           contact us <Arrow />
-        </li>
+        </li> */}
+        <NavLinks />
       </ul>
       <div className='buttons'>
         <button className='ecoCast'>Eco Cast Live</button>
