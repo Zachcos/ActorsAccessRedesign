@@ -7,3 +7,9 @@ interface BreakdownProps {
   startDate?: string;
   union: string;
 }
+
+interface MenuItemProps {
+  title: string;
+  url: string;
+  submenu?: MenuItemProps[];
+}
