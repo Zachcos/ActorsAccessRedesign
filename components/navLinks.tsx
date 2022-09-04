@@ -4,7 +4,7 @@ import { colors, font } from '../styles/variables';
 
 const NavLinksWrapper = styled.ul`
   ${font(14, 500, `${colors.neut_1}`)};
-  margin: 0 0 48px 0;
+  margin: 0 24px 48px 0;
   text-align: right;
   li {
     cursor: pointer;
