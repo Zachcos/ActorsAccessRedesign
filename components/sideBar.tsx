@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import { Cart, MailEmpty } from '../styles/icons';
+import MenuItems from './MenuItems';
+import { menuItems } from '../data/menuItems';
 
 const SideBarWrapper = styled.div`
   background-color: ${colors.neut_8};
@@ -95,6 +97,7 @@ const SideBar = () => {
         <li>
           contact us <Arrow />
         </li> */}
+        <MenuItems items={menuItems} />
       </ul>
       <div className='buttons'>
         <button className='ecoCast'>Eco Cast Live</button>

@@ -21,8 +21,25 @@ const Wrapper = styled.ul`
     }
   }
 `;
-const MenuItems = () => {
-  return <Wrapper>this is a test</Wrapper>;
+
+interface ItemProps {
+  title: string;
+  url?: string;
+  submenu?: ItemProps[];
+}
+
+interface ItemsProps {
+  items: ItemProps[];
+}
+
+const MenuItems = ({ items }: ItemsProps) => {
+  return (
+    <Wrapper>
+      {items.map((item: ItemProps, index: number) => (
+        <li key={index}>{item.title}</li>
+      ))}
+    </Wrapper>
+  );
 };
 
 export default MenuItems;
