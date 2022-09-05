@@ -10,6 +10,6 @@ interface BreakdownProps {
 
 interface MenuItemProps {
   title: string;
-  url: string;
-  submenu?: MenuItemProps[];
+  url?: string;
+  submenu?: MenuItemProps[] | undefined;
 }
