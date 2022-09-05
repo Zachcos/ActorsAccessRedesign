@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import { Cart, MailEmpty } from '../styles/icons';
-import NavLinks from './navLinks';
 
 const SideBarWrapper = styled.div`
   background-color: ${colors.neut_8};
@@ -96,7 +95,6 @@ const SideBar = () => {
         <li>
           contact us <Arrow />
         </li> */}
-        <NavLinks />
       </ul>
       <div className='buttons'>
         <button className='ecoCast'>Eco Cast Live</button>

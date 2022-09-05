@@ -1,10 +1,10 @@
 import type { ReactElement } from 'react';
 import styled from 'styled-components';
-import UserCard from '../components/userCard';
-import ReminderCard from '../components/reminderCard';
-import UsBreakdowns from '../components/usBreakdowns';
-import YoutubePlaceholder from '../components/youtubePlaceholder';
-import Layout from '../components/layout';
+import UserCard from '../components/UserCard';
+import ReminderCard from '../components/ReminderCard';
+import UsBreakdowns from '../components/UsBreakdowns';
+import YoutubePlaceholder from '../components/YoutubePlaceholder';
+import Layout from '../components/Layout';
 
 const HomeWrapper = styled.div`
   display: flex;

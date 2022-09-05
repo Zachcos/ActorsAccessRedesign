@@ -1,14 +1,14 @@
-import { menuItems } from '../data/dropdownData';
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 
-const NavLinksWrapper = styled.ul`
+const Wrapper = styled.ul`
   ${font(14, 500, `${colors.neut_1}`)};
   margin: 0 24px 48px 0;
   text-align: right;
   li {
     cursor: pointer;
     margin-bottom: 24px;
+    position: relative;
     &:last-child {
       margin-bottom: 0;
     }
@@ -21,14 +21,8 @@ const NavLinksWrapper = styled.ul`
     }
   }
 `;
-const NavLinks = () => {
-  return (
-    <NavLinksWrapper>
-      {menuItems.map((item: MenuItemProps, index: number) => (
-        <li key={index}>{item.title}</li>
-      ))}
-    </NavLinksWrapper>
-  );
+const MenuItems = () => {
+  return <Wrapper>this is a test</Wrapper>;
 };
 
-export default NavLinks;
+export default MenuItems;

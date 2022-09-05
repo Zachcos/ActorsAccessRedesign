@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout';
-import SearchFilterCard from '../components/seachFilterCard';
-import BreakdownsTable from '../components/breakdownsTable';
+import Layout from '../components/Layout';
+import SearchFilterCard from '../components/SearchFilterCard';
+import BreakdownsTable from '../components/BreakdownsTable';
 
 const Wrapper = styled.div`
   align-items: center;
