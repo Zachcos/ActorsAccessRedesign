@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
+import { Arrow } from '../styles/icons';
 
 const Wrapper = styled.ul`
   ${font(14, 500, `${colors.neut_1}`)};
@@ -35,9 +36,19 @@ interface ItemsProps {
 const MenuItems = ({ items }: ItemsProps) => {
   return (
     <Wrapper>
-      {items.map((item: ItemProps, index: number) => (
-        <li key={index}>{item.title}</li>
-      ))}
+      {items.map((item: ItemProps, index: number) => {
+        {
+          if (item.submenu) {
+            return (
+              <li key={index}>
+                {item.title} <Arrow />
+              </li>
+            );
+          } else {
+            return <li key={index}>{item.title}</li>;
+          }
+        }
+      })}
     </Wrapper>
   );
 };
