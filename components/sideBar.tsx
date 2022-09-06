@@ -41,7 +41,9 @@ const SideBarWrapper = styled.div`
     }
   }
   .navLinks {
-    margin-right: 24px;
+    li {
+      padding-right: 24px;
+    }
   }
   .buttons {
     align-items: center;
