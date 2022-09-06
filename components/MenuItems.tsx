@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import { Arrow } from '../styles/icons';
 import Dropdown from './Dropdown';
+import { useState } from 'react';
 
 const ListItem = styled.li`
   ${font(14, 500, `${colors.neut_1}`)};
@@ -32,13 +33,27 @@ interface Props {
 }
 
 const MenuItems = ({ items, depthLevel }: Props) => {
+  const [dropdown, setDropdown] = useState(false);
+
+  const onMouseEnter = () => {
+    window.innerWidth > 960 && setDropdown(true);
+  };
+
+  const onMouseLeave = () => {
+    window.innerWidth > 960 && setDropdown(false);
+  };
+
   return (
-    <ListItem>
+    <ListItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {!items.url && items.submenu ? (
         <>
           {items.title}
           <Arrow />
-          <Dropdown submenu={items.submenu} depthLevel={depthLevel} />
+          <Dropdown
+            submenu={items.submenu}
+            depthLevel={depthLevel}
+            dropdown={dropdown}
+          />
         </>
       ) : (
         items.title
