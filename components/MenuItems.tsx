@@ -40,7 +40,7 @@ interface Props {
 const MenuItems = ({ items, depthLevel }: Props) => {
   const [dropdown, setDropdown] = useState(false);
 
-  let ref = useRef();
+  let ref = useRef<HTMLLIElement>(null);
 
   const onMouseEnter = () => {
     window.innerWidth > 960 && setDropdown(true);
