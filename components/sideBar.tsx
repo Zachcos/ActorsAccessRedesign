@@ -40,6 +40,9 @@ const SideBarWrapper = styled.div`
       fill: ${colors.neut_5};
     }
   }
+  .navLinks {
+    margin-right: 24px;
+  }
   .buttons {
     align-items: center;
     display: flex;
@@ -80,24 +83,10 @@ const SideBar = () => {
         </a>
       </div>
       <ul className='navLinks'>
-        {/* <li>home</li>
-        <li>
-          breakdowns <Arrow />
-        </li>
-        <li>
-          my tools <Arrow />
-        </li>
-        <li>submissions</li>
-        <li>
-          auditions <Arrow />
-        </li>
-        <li>
-          services <Arrow />
-        </li>
-        <li>
-          contact us <Arrow />
-        </li> */}
-        <MenuItems items={menuItems} />
+        {menuItems.map((menu, index) => {
+          const depthLevel = 0;
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+        })}
       </ul>
       <div className='buttons'>
         <button className='ecoCast'>Eco Cast Live</button>
