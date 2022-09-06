@@ -5,49 +5,49 @@ const menuItems: ItemProps[] = [
   },
   {
     title: 'breakdowns',
-    // submenu: [
-    //   {
-    //     title: 'United States',
-    //     url: 'unitedStates',
-    //   },
-    //   {
-    //     title: 'Canada',
-    //     url: 'canada',
-    //   },
-    // ],
+    submenu: [
+      {
+        title: 'United States',
+        url: 'unitedStates',
+      },
+      {
+        title: 'Canada',
+        url: 'canada',
+      },
+    ],
   },
   {
     title: 'my tools',
-    // submenu: [
-    //   {
-    //     title: 'my account',
-    //     url: '#',
-    //   },
-    //   {
-    //     title: 'contact information',
-    //     url: '#',
-    //   },
-    //   {
-    //     title: 'manage my profile',
-    //     url: '#',
-    //   },
-    //   {
-    //     title: 'manage representation',
-    //     url: '#',
-    //   },
-    //   {
-    //     title: 'email',
-    //     url: '#',
-    //   },
-    //   {
-    //     title: 'custom link',
-    //     url: '#',
-    //   },
-    //   {
-    //     title: 'order history',
-    //     url: '#',
-    //   },
-    // ],
+    submenu: [
+      {
+        title: 'my account',
+        url: '#',
+      },
+      {
+        title: 'contact information',
+        url: '#',
+      },
+      {
+        title: 'manage my profile',
+        url: '#',
+      },
+      {
+        title: 'manage representation',
+        url: '#',
+      },
+      {
+        title: 'email',
+        url: '#',
+      },
+      {
+        title: 'custom link',
+        url: '#',
+      },
+      {
+        title: 'order history',
+        url: '#',
+      },
+    ],
   },
   {
     title: 'submissions',
@@ -69,80 +69,80 @@ const menuItems: ItemProps[] = [
           },
         ],
       },
-      // {
-      //   title: 'eco cast live',
-      //   submenu: [
-      //     {
-      //       title: 'current',
-      //       url: '#',
-      //     },
-      //     {
-      //       title: 'archived',
-      //       url: '#',
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: 'eco cast self tapes',
-      //   submenu: [
-      //     {
-      //       title: 'current',
-      //       url: '#',
-      //     },
-      //     {
-      //       title: 'archived',
-      //       url: '#',
-      //     },
-      //   ],
-      // },
+      {
+        title: 'eco cast live',
+        submenu: [
+          {
+            title: 'current',
+            url: '#',
+          },
+          {
+            title: 'archived',
+            url: '#',
+          },
+        ],
+      },
+      {
+        title: 'eco cast self tapes',
+        submenu: [
+          {
+            title: 'current',
+            url: '#',
+          },
+          {
+            title: 'archived',
+            url: '#',
+          },
+        ],
+      },
     ],
   },
   {
     title: 'services',
-    //   submenu: [
-    //     {
-    //       title: 'get sides',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'talent link',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'extra access',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'screenplay online',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'aircheck',
-    //       url: '#',
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: 'contact us',
-    //   url: '/contactUs',
-    //   submenu: [
-    //     {
-    //       title: 'chat',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'email',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'phone',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'FAQ',
-    //       url: '#',
-    //     },
-    //   ],
+    submenu: [
+      {
+        title: 'get sides',
+        url: '#',
+      },
+      {
+        title: 'talent link',
+        url: '#',
+      },
+      {
+        title: 'extra access',
+        url: '#',
+      },
+      {
+        title: 'screenplay online',
+        url: '#',
+      },
+      {
+        title: 'aircheck',
+        url: '#',
+      },
+    ],
+  },
+  {
+    title: 'contact us',
+    url: '/contactUs',
+    submenu: [
+      {
+        title: 'chat',
+        url: '#',
+      },
+      {
+        title: 'email',
+        url: '#',
+      },
+      {
+        title: 'phone',
+        url: '#',
+      },
+      {
+        title: 'FAQ',
+        url: '#',
+      },
+    ],
   },
 ];
 
