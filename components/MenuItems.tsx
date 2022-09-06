@@ -26,9 +26,12 @@ const ListItem = styled.li`
   }
 `;
 
-//! FIX PROP TYPE
+interface Props {
+  items: ItemProps;
+  depthLevel: number;
+}
 
-const MenuItems = ({ items, depthLevel }: any) => {
+const MenuItems = ({ items, depthLevel }: Props) => {
   return (
     <ListItem>
       {!items.url && items.submenu ? (
