@@ -1,55 +1,43 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import { Arrow } from '../styles/icons';
+import Dropdown from './Dropdown';
 
-const Wrapper = styled.ul`
+const ListItem = styled.li`
   ${font(14, 500, `${colors.neut_1}`)};
-  margin: 0 24px 48px 0;
+  cursor: pointer;
+  margin-bottom: 36px;
+  position: relative;
   text-align: right;
-  li {
-    cursor: pointer;
-    margin-bottom: 24px;
-    position: relative;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    svg {
-      margin-left: 4px;
-      transform: rotate(-90deg);
-    }
+  svg {
+    margin-left: 4px;
+    transform: rotate(-90deg);
+  }
+  svg g {
+    fill: ${colors.neut_1};
+  }
+  .dropdown {
     svg g {
-      fill: ${colors.neut_1};
+      fill: ${colors.neut_8};
     }
   }
 `;
 
-interface ItemProps {
-  title: string;
-  url?: string;
-  submenu?: ItemProps[];
-}
+//! FIX PROP TYPE
 
-interface ItemsProps {
-  items: ItemProps[];
-}
-
-const MenuItems = ({ items }: ItemsProps) => {
+const MenuItems = ({ items, depthLevel }: any) => {
   return (
-    <Wrapper>
-      {items.map((item: ItemProps, index: number) => {
-        {
-          if (item.submenu) {
-            return (
-              <li key={index}>
-                {item.title} <Arrow />
-              </li>
-            );
-          } else {
-            return <li key={index}>{item.title}</li>;
-          }
-        }
-      })}
-    </Wrapper>
+    <ListItem>
+      {!items.url && items.submenu ? (
+        <>
+          {items.title}
+          <Arrow />
+          <Dropdown submenu={items.submenu} depthLevel={depthLevel} />
+        </>
+      ) : (
+        items.title
+      )}
+    </ListItem>
   );
 };
 
