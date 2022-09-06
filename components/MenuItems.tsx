@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import { Arrow } from '../styles/icons';
 import Dropdown from './Dropdown';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const ListItem = styled.li`
   ${font(14, 500, `${colors.neut_1}`)};
@@ -20,6 +20,11 @@ const ListItem = styled.li`
   .dropdown {
     li {
       margin-bottom: 0;
+      &:hover {
+        svg g {
+          fill: ${colors.neut_2};
+        }
+      }
     }
     svg g {
       fill: ${colors.neut_8};
@@ -35,6 +40,8 @@ interface Props {
 const MenuItems = ({ items, depthLevel }: Props) => {
   const [dropdown, setDropdown] = useState(false);
 
+  let ref = useRef();
+
   const onMouseEnter = () => {
     window.innerWidth > 960 && setDropdown(true);
   };
@@ -44,7 +51,7 @@ const MenuItems = ({ items, depthLevel }: Props) => {
   };
 
   return (
-    <ListItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+    <ListItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} ref={ref}>
       {!items.url && items.submenu ? (
         <>
           {items.title}
