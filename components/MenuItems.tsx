@@ -17,6 +17,9 @@ const ListItem = styled.li`
     fill: ${colors.neut_1};
   }
   .dropdown {
+    li {
+      margin-bottom: 0;
+    }
     svg g {
       fill: ${colors.neut_8};
     }

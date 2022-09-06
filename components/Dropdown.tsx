@@ -23,7 +23,6 @@ const Wrapper = styled.ul`
     align-items: center;
     height: 34px;
     padding-left: 24px;
-    margin-bottom: 8px;
     text-align: left;
     &:hover {
       color: ${colors.neut_2};
