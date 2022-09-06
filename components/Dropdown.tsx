@@ -6,7 +6,7 @@ const Wrapper = styled.ul`
   background: ${colors.neut_2};
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
-  /* display: none; */
+  display: none;
   left: 170px;
   right: 0;
   top: -36px;
@@ -40,11 +40,17 @@ const Wrapper = styled.ul`
   }
 `;
 
-const Dropdown = ({ submenu, depthLevel }: any) => {
+interface Props {
+  submenu: ItemProps[];
+  depthLevel: number;
+  dropdown: boolean;
+}
+
+const Dropdown = ({ submenu, depthLevel, dropdown }: Props) => {
   depthLevel = depthLevel + 1;
   const dropdownClass = depthLevel > 1 ? 'dropdownSubmenu' : '';
   return (
-    <Wrapper className={`dropdown ${dropdownClass}`}>
+    <Wrapper className={`dropdown ${dropdownClass} ${dropdown ? 'show' : ''}`}>
       {submenu.map((submenu: any, index: number) => (
         <MenuItems items={submenu} key={index} depthLevel={depthLevel} />
       ))}
