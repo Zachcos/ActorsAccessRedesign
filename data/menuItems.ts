@@ -8,7 +8,33 @@ const menuItems: ItemProps[] = [
     submenu: [
       {
         title: 'United States',
-        url: 'unitedStates',
+        submenu: [
+          {
+            title: 'New York',
+            url: '#',
+          },
+          {
+            title: 'Los Angeles',
+            url: '#',
+          },
+          {
+            title: 'Chicago',
+            url: '#',
+          },
+          {
+            title: 'San Francisco/NorCal',
+            url: '#',
+          },
+          {
+            title: 'Other',
+            submenu: [
+              {
+                title: 'Central Atlanic (DC, DE, MD, PA, VA, WV)',
+                url: '#',
+              },
+            ],
+          },
+        ],
       },
       {
         title: 'Canada',
