@@ -1,4 +1,4 @@
-const menuItems: MenuItemProps[] = [
+const menuItems: ItemProps[] = [
   {
     title: 'home',
     url: '/',
@@ -61,28 +61,40 @@ const menuItems: MenuItemProps[] = [
         submenu: [
           {
             title: 'current',
-            url: 'archived',
+            url: '#',
           },
-        ],
-      },
-      {
-        title: 'eco cast live',
-        submenu: [
           {
-            title: 'current',
-            url: 'archived',
+            title: 'archived',
+            url: '#',
           },
         ],
       },
-      {
-        title: 'eco cast self tapes',
-        submenu: [
-          {
-            title: 'current',
-            url: 'archived',
-          },
-        ],
-      },
+      // {
+      //   title: 'eco cast live',
+      //   submenu: [
+      //     {
+      //       title: 'current',
+      //       url: '#',
+      //     },
+      //     {
+      //       title: 'archived',
+      //       url: '#',
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: 'eco cast self tapes',
+      //   submenu: [
+      //     {
+      //       title: 'current',
+      //       url: '#',
+      //     },
+      //     {
+      //       title: 'archived',
+      //       url: '#',
+      //     },
+      //   ],
+      // },
     ],
   },
   {
