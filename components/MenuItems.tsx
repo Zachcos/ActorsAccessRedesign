@@ -29,6 +29,18 @@ const ListItem = styled.li`
     svg g {
       fill: ${colors.neut_8};
     }
+    &.dropdownSubmenu {
+      li {
+        &:hover {
+          svg g {
+            fill: ${colors.neut_2};
+          }
+        }
+        svg g {
+          fill: ${colors.neut_8};
+        }
+      }
+    }
   }
 `;
 
