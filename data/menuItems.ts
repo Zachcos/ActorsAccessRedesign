@@ -29,7 +29,39 @@ const menuItems: ItemProps[] = [
             title: 'Other',
             submenu: [
               {
-                title: 'Central Atlanic (DC, DE, MD, PA, VA, WV)',
+                title: 'Central Atlantic (DC, DE, MD, PA, VA, WV)',
+                url: '#',
+              },
+              {
+                title: 'Midwest (IA, IL, IN, MI, MN, OH, WI)',
+                url: '#',
+              },
+              {
+                title: 'New England (CT, MA, NE, NH, NJ, NY, RI, VT)',
+                url: '#',
+              },
+              {
+                title: 'North Central (MT, ND, NE, SD, WY)',
+                url: '#',
+              },
+              {
+                title: 'Northwest (ID, OR, WA)',
+                url: '#',
+              },
+              {
+                title: 'Pacific (HI)',
+                url: '#',
+              },
+              {
+                title: 'Rocky Mountains (AZ, CO, NM, NV, UT)',
+                url: '#',
+              },
+              {
+                title: 'South Central (AR, KS, LA, NM, OK, TX)',
+                url: '#',
+              },
+              {
+                title: 'Southeast (AL, FL, GA, KY, LA, MS, NC, SC, TN, VA)',
                 url: '#',
               },
             ],
