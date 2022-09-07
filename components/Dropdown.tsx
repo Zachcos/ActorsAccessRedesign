@@ -36,6 +36,15 @@ const Wrapper = styled.ul`
     }
     &.dropdownSubmenu {
       top: -24px;
+      &.subsub {
+        li {
+          ${font(12, 400, `${colors.neut_7}`)};
+          margin-bottom: 8px;
+          &:hover {
+            ${font(12, 400, `${colors.neut_2}`)};
+          }
+        }
+      }
     }
   }
 `;
@@ -48,7 +57,16 @@ interface Props {
 
 const Dropdown = ({ submenu, depthLevel, dropdown }: Props) => {
   depthLevel = depthLevel + 1;
-  const dropdownClass = depthLevel > 1 ? 'dropdownSubmenu' : '';
+  // const dropdownClass = depthLevel > 1 ? 'dropdownSubmenu' : '';
+
+  let dropdownClass;
+  if (depthLevel === 3) {
+    dropdownClass = 'dropdownSubmenu subsub';
+  } else if (depthLevel > 1) {
+    dropdownClass = 'dropdownSubmenu';
+  } else {
+    dropdownClass = '';
+  }
   return (
     <Wrapper className={`dropdown ${dropdownClass} ${dropdown ? 'show' : ''}`}>
       {submenu.map((submenu: any, index: number) => (
