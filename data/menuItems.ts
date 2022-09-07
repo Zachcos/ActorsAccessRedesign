@@ -245,7 +245,6 @@ const menuItems: ItemProps[] = [
   },
   {
     title: 'contact us',
-    url: '/contactUs',
     submenu: [
       {
         title: 'chat',
