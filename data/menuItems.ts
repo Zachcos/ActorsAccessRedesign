@@ -70,7 +70,49 @@ const menuItems: ItemProps[] = [
       },
       {
         title: 'Canada',
-        url: 'canada',
+        submenu: [
+          {
+            title: 'Vancouver',
+            url: '#',
+          },
+          {
+            title: 'Toronto',
+            url: '#',
+          },
+          {
+            title: 'Other',
+            submenu: [
+              {
+                title: 'Alberta',
+                url: '#',
+              },
+              {
+                title: 'Atlantic Canada (NB, NL, NS, PEI)',
+                url: '#',
+              },
+              {
+                title: 'Canadian Prairies (MB, SK)',
+                url: '#',
+              },
+              {
+                title: 'Northwest Territories',
+                url: '#',
+              },
+              {
+                title: 'Nunavut',
+                url: '#',
+              },
+              {
+                title: 'Quebec',
+                url: '#',
+              },
+              {
+                title: 'Yukon',
+                url: '#',
+              },
+            ],
+          },
+        ],
       },
     ],
   },
