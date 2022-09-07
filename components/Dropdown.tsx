@@ -40,6 +40,9 @@ const Wrapper = styled.ul`
         li {
           ${font(12, 400, `${colors.neut_7}`)};
           margin-bottom: 8px;
+          &:last-child {
+            margin-bottom: 0;
+          }
           &:hover {
             ${font(12, 400, `${colors.neut_2}`)};
           }
