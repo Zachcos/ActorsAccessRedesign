@@ -129,7 +129,28 @@ const menuItems: ItemProps[] = [
       },
       {
         title: 'manage my profile',
-        url: '#',
+        submenu: [
+          {
+            title: 'about me',
+            url: '#',
+          },
+          {
+            title: 'resume',
+            url: '#',
+          },
+          {
+            title: 'size card',
+            url: '#',
+          },
+          {
+            title: 'photos',
+            url: '#',
+          },
+          {
+            title: 'media',
+            url: '#',
+          },
+        ],
       },
       {
         title: 'manage representation',
