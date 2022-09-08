@@ -6,14 +6,12 @@ const Card = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
   display: flex;
-  height: 246px;
-  margin-bottom: 32px;
+  height: 100%;
   width: 466px;
   .sidebar {
     background: ${colors.neut_8};
     border-radius: 8px 0 0 8px;
     width: 64px;
-    height: 100%;
     .iconContainer {
       display: flex;
       justify-content: center;
@@ -28,10 +26,13 @@ const Card = styled.div`
   .main {
     ${font(12, 400, `${colors.neut_6}`, 'italic')};
     box-sizing: border-box;
-    padding: 32px 24px 0 24px;
+    padding: 32px 24px 32px 24px;
     p {
       line-height: 1.2rem;
       margin-bottom: 1.8rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       i {
         ${font(12, 800)};
       }
@@ -40,10 +41,26 @@ const Card = styled.div`
       }
     }
   }
+  &.danger {
+    background: ${colors.dang_1};
+    .sidebar {
+      background: ${colors.dang_6};
+      svg {
+        fill: ${colors.dang_2};
+      }
+    }
+    .main {
+      ${font(12, 400, `${colors.dang_9}`, 'italic')};
+    }
+  }
 `;
 
-const ReminderCard = () => (
-  <Card>
+interface Props {
+  type: string;
+}
+
+const ReminderCard = ({ type }: Props) => (
+  <Card className={type}>
     <div className='sidebar'>
       <div className='iconContainer'>
         <Warning />
