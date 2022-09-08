@@ -75,7 +75,7 @@ interface Props {
   type: string;
 }
 
-const ReminderCard = ({ type }: Props) => (
+const AlertCard = ({ type }: Props) => (
   <Card className={type}>
     <div className='sidebar'>
       <div className='iconContainer'>
@@ -99,4 +99,4 @@ const ReminderCard = ({ type }: Props) => (
   </Card>
 );
 
-export default ReminderCard;
+export default AlertCard;

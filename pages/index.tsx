@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 import styled from 'styled-components';
 import UserCard from '../components/UserCard';
-import ReminderCard from '../components/ReminderCard';
+import AlertCard from '../components/AlertCard';
 import UsBreakdowns from '../components/UsBreakdowns';
 import YoutubePlaceholder from '../components/YoutubePlaceholder';
 import Layout from '../components/Layout';
@@ -19,7 +19,7 @@ const Home = () => {
     <HomeWrapper>
       <div className='one'>
         <UserCard />
-        <ReminderCard type={'danger'} />
+        <AlertCard type={'danger'} />
       </div>
       <div className='two'>
         <UsBreakdowns />
