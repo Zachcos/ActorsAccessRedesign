@@ -43,29 +43,17 @@ const Card = styled.div`
   }
   &.danger {
     .sidebar {
-      background: ${colors.dang_6};
+      border-right: 6px solid ${colors.dang_5};
       svg {
-        fill: ${colors.dang_2};
-      }
-    }
-    .main {
-      color: ${colors.dang_9};
-      p a {
-        color: ${colors.dang_6};
+        fill: ${colors.dang_5};
       }
     }
   }
   &.warn {
     .sidebar {
-      background: ${colors.warn_8};
+      border-right: 6px solid ${colors.warn_6};
       svg {
-        fill: ${colors.warn_2};
-      }
-    }
-    .main {
-      color: ${colors.warn_9};
-      p a {
-        color: ${colors.warn_7};
+        fill: ${colors.warn_6};
       }
     }
   }
