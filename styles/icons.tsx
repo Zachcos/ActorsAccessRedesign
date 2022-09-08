@@ -319,6 +319,21 @@ const Calendar = () => (
   </svg>
 );
 
+const Info = () => (
+  <svg viewBox='0 0 16 16'>
+    <g id='Layer_2' data-name='Layer 2'>
+      <g id='Layer_10' data-name='Layer 10'>
+        <rect className='cls-1' x='7' y='8' width='2' height='4' />
+        <rect className='cls-1' x='7' y='4' width='2' height='2' />
+        <path
+          className='cls-1'
+          d='M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2Z'
+        />
+      </g>
+    </g>
+  </svg>
+);
+
 export {
   Facebook,
   Instagram,
@@ -340,4 +355,5 @@ export {
   Warning,
   CheckMark,
   Calendar,
+  Info,
 };
