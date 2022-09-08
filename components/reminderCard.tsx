@@ -49,7 +49,10 @@ const Card = styled.div`
       }
     }
     .main {
-      ${font(12, 400, `${colors.dang_9}`, 'italic')};
+      color: ${colors.dang_9};
+      p a {
+        color: ${colors.dang_6};
+      }
     }
   }
   &.warn {
@@ -58,8 +61,11 @@ const Card = styled.div`
       svg {
         fill: ${colors.warn_2};
       }
-      .main {
-        ${font(12, 400, `${colors.warn_9}`)};
+    }
+    .main {
+      color: ${colors.warn_9};
+      p a {
+        color: ${colors.warn_7};
       }
     }
   }
