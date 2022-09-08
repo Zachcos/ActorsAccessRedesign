@@ -42,7 +42,6 @@ const Card = styled.div`
     }
   }
   &.danger {
-    background: ${colors.dang_1};
     .sidebar {
       background: ${colors.dang_6};
       svg {
