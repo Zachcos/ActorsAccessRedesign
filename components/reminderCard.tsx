@@ -52,6 +52,17 @@ const Card = styled.div`
       ${font(12, 400, `${colors.dang_9}`, 'italic')};
     }
   }
+  &.warn {
+    .sidebar {
+      background: ${colors.warn_8};
+      svg {
+        fill: ${colors.warn_2};
+      }
+      .main {
+        ${font(12, 400, `${colors.warn_9}`)};
+      }
+    }
+  }
 `;
 
 interface Props {

@@ -19,7 +19,7 @@ const Home = () => {
     <HomeWrapper>
       <div className='one'>
         <UserCard />
-        <ReminderCard type={'danger'} />
+        <ReminderCard type={'warn'} />
       </div>
       <div className='two'>
         <UsBreakdowns />
