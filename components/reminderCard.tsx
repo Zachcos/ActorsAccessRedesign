@@ -20,7 +20,7 @@ const Card = styled.div`
       width: 64px;
     }
     svg {
-      fill: ${colors.prim_5};
+      fill: ${colors.dang_4};
       margin-top: 32px;
       width: 16px;
     }
