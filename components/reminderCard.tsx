@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
-import { Warning } from '../styles/icons';
+import { Warning, Info } from '../styles/icons';
 
 const Card = styled.div`
   border-radius: 8px;
@@ -73,7 +73,7 @@ const ReminderCard = ({ type }: Props) => (
   <Card className={type}>
     <div className='sidebar'>
       <div className='iconContainer'>
-        <Warning />
+        {type === 'danger' ? <Warning /> : <Info />}
       </div>
     </div>
     <div className='main'>
