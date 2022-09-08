@@ -9,6 +9,7 @@ import Layout from '../components/Layout';
 const HomeWrapper = styled.div`
   display: flex;
   .one {
+    height: 100%;
     margin-right: 48px;
   }
 `;
@@ -18,7 +19,7 @@ const Home = () => {
     <HomeWrapper>
       <div className='one'>
         <UserCard />
-        <ReminderCard />
+        <ReminderCard type={'danger'} />
       </div>
       <div className='two'>
         <UsBreakdowns />
