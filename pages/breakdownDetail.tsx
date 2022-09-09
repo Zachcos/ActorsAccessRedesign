@@ -6,7 +6,7 @@ import AlertCard from '../components/AlertCard';
 
 const CardCopy = styled.div`
   .title {
-    ${font(16, 800, `${colors.neut_8}`)};
+    ${font(20, 800, `${colors.neut_8}`)};
     margin-bottom: 24px;
   }
   .subtitle {
@@ -27,7 +27,7 @@ const BreakdownDetail = () => {
           <p className='title'>Submission Instructions</p>
           <p className='subtitle'>Always submit ASAP!</p>
           <p className='copy'>
-            Submitting within the first day of Breakdown publication is high
+            Submitting within the first day of Breakdown publication is highly
             recommended
           </p>
         </CardCopy>
