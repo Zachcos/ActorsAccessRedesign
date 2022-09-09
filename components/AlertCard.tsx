@@ -57,6 +57,14 @@ const Card = styled.div`
       }
     }
   }
+  &.success {
+    .sidebar {
+      border-right: 6px solid ${colors.succ_4};
+      svg {
+        fill: ${colors.succ_4};
+      }
+    }
+  }
 `;
 
 interface Props {
