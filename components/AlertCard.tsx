@@ -24,22 +24,8 @@ const Card = styled.div`
     }
   }
   .main {
-    ${font(12, 400, `${colors.neut_6}`, 'italic')};
     box-sizing: border-box;
     padding: 32px 24px 32px 24px;
-    p {
-      line-height: 1.2rem;
-      margin-bottom: 1.8rem;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      i {
-        ${font(12, 800)};
-      }
-      a {
-        color: ${colors.neut_6};
-      }
-    }
   }
   &.danger {
     .sidebar {
@@ -67,31 +53,18 @@ const Card = styled.div`
   }
 `;
 
-interface Props {
+interface Props extends React.PropsWithChildren {
   type: string;
 }
 
-const AlertCard = ({ type }: Props) => (
+const AlertCard = ({ type, children }: Props) => (
   <Card className={type}>
     <div className='sidebar'>
       <div className='iconContainer'>
         {type === 'danger' ? <Warning /> : <Info />}
       </div>
     </div>
-    <div className='main'>
-      <p>
-        Be sure to keep your profile and résumé up-to-date, and upload your
-        current photos so you and your representatives have access to the most
-        current and accurate information about you.
-      </p>
-      <p>
-        <i>Actors Access</i> uses your information to alert vou via email when
-        new Breakdowns on actors access match your profile. PLEASE NOTE, if vou
-        do not wish to receive information about certain types of roles, or if
-        vou do not wish to receive ANY notifications, vou may update vour
-        preferences on the <a href='#'>My Account</a> page.
-      </p>
-    </div>
+    <div className='main'>{children}</div>
   </Card>
 );
 
