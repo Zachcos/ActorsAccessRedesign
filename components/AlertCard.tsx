@@ -7,6 +7,7 @@ const Card = styled.div`
   box-shadow: 0 4px 12px rgba(121, 130, 145, 0.4);
   display: flex;
   height: 100%;
+  margin-right: 48px;
   min-width: 466px;
   width: 466px;
   .sidebar {
