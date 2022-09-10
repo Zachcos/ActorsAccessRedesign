@@ -47,6 +47,11 @@ const Table = styled.table`
       }
       td {
         padding-top: 28px;
+        .dateTime {
+          margin-left: 24px;
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
@@ -56,8 +61,21 @@ const columnHelper = createColumnHelper<BreakdownProps>();
 
 const columns = [
   columnHelper.accessor('dateTime', {
-    cell: (info) => info.getValue(),
-    header: () => 'Date',
+    cell: (info) => {
+      const dateStr = info.getValue();
+      const [yyyy, mm, dd, hh, mi] = dateStr.split(/[/:\-T]/);
+      return (
+        <div className='dateTime'>
+          <span>
+            {dd}-{mm}-{yyyy}
+          </span>
+          <span>
+            {hh}:{mi}
+          </span>
+        </div>
+      );
+    },
+    header: () => <div style={{ marginLeft: '12px' }}>Date</div>,
   }),
   columnHelper.accessor('title', {
     cell: (info) => info.getValue(),
