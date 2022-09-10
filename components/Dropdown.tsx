@@ -53,14 +53,13 @@ const Wrapper = styled.ul`
 `;
 
 interface Props {
-  submenu: ItemProps[];
+  submenu: MenuItemProps[];
   depthLevel: number;
   dropdown: boolean;
 }
 
 const Dropdown = ({ submenu, depthLevel, dropdown }: Props) => {
   depthLevel = depthLevel + 1;
-  // const dropdownClass = depthLevel > 1 ? 'dropdownSubmenu' : '';
 
   let dropdownClass;
   if (depthLevel === 3) {

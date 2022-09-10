@@ -45,7 +45,7 @@ const ListItem = styled.li`
 `;
 
 interface Props {
-  items: ItemProps;
+  items: MenuItemProps;
   depthLevel: number;
 }
 
