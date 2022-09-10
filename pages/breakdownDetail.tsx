@@ -22,9 +22,63 @@ const CardCopy = styled.div`
 const FinePrint = styled.div`
   ${font(12, 400, `${colors.neut_5}`)};
   line-height: 1.05rem;
-  margin-left: 48px;
   margin-top: 8px;
   max-width: 450px;
+`;
+
+const DetailWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0;
+  .titleWrapper {
+    width: 100%;
+    .title {
+      ${font(60, 900, `${colors.neut_8}`)};
+      margin-bottom: 8px;
+    }
+    .datePosted {
+      ${font(12, 400, `${colors.neut_6}`)};
+      margin-bottom: 48px;
+      i {
+        font-weight: 900;
+      }
+    }
+  }
+  .primaryInfo {
+    margin-right: 24px;
+    min-width: 475px;
+    .audition,
+    .production {
+      ${font(16, 400, `${colors.neut_6}`)};
+      i {
+        font-weight: 900;
+      }
+      p {
+        margin-bottom: 12px;
+      }
+    }
+    .audition {
+      margin-bottom: 32px;
+    }
+  }
+  .secondaryInfo {
+    min-width: 475px;
+  }
+`;
+
+const BreakdownWrapper = styled.div`
+  .bdItem {
+    margin-bottom: 24px;
+    max-width: 900px;
+    .role {
+      ${font(20, 900, `${colors.neut_8}`)};
+      margin-bottom: 8px;
+    }
+    .description {
+      ${font(14, 400, `${colors.neut_6}`)};
+      line-height: 1.05rem;
+    }
+  }
 `;
 
 const BreakdownDetail = () => {
@@ -52,40 +106,45 @@ const BreakdownDetail = () => {
         Services, Ltd. All Rights reserved.
       </FinePrint>
       <DetailWrapper>
-        <h2 className='title'>A Wonderful World</h2>
-        <span className='datePosted'>
-          <i>Posted:</i> Monday, Aug 1, 2022, 2:24pm Pacific
-        </span>
+        <div className='titleWrapper'>
+          <h2 className='title'>A Wonderful World</h2>
+          <p className='datePosted'>
+            <i>Posted:</i> Monday, Aug 1, 2022, 2:24pm Pacific
+          </p>
+        </div>
         <div className='primaryInfo'>
           <div className='audition'>
-            <span className='audition-venue'>
+            <p className='audition-venue'>
               <i>Venue:</i> Pearl Studios
-            </span>
-            <span className='audition-dates'>
+            </p>
+            <p className='audition-union'>
+              <i>Union:</i> AEA
+            </p>
+            <p className='audition-dates'>
               <i>Audition Dates:</i> Immediate Virtual Submissons via Eco Cast
-            </span>
-            <span className='audition-deadline'>
+            </p>
+            <p className='audition-deadline'>
               <i>Audition Deadline:</i> August 11, 2022
-            </span>
+            </p>
           </div>
           <div className='production'>
-            <span className='production-rehDates'>
+            <p className='production-rehDates'>
               <i>Rehearsal Dates:</i> September 6-20, 2022
-            </span>
-            <span className='production-dates'>
+            </p>
+            <p className='production-dates'>
               <i>Production Dates:</i> September 21 - November 12, 2022
-            </span>
-            <span className='production-pay'>
+            </p>
+            <p className='production-pay'>
               <i>Rate of pay:</i> $1000/wk
-            </span>
-            <span className='production-location'>
+            </p>
+            <p className='production-location'>
               <i>Location:</i> New York, NY
-            </span>
+            </p>
           </div>
+        </div>
 
-          <div className='secondaryInfo'>
-            <p>INFO COMING SOON</p>
-          </div>
+        <div className='secondaryInfo'>
+          <p>INFO COMING SOON</p>
         </div>
       </DetailWrapper>
       <BreakdownWrapper>
