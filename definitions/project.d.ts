@@ -42,7 +42,7 @@ interface RolesProps {
 }
 
 interface ShowDataProps {
-  gigInfo: GigProps[];
+  gigInfo: GigProps;
   creativeInfo: CreativeProps[];
   roles: RolesProps[];
 }
