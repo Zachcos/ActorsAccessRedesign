@@ -6,15 +6,15 @@ import AlertCard from '../components/AlertCard';
 
 const CardCopy = styled.div`
   .title {
-    ${font(20, 800, `${colors.neut_8}`)};
+    ${font(16, 800, `${colors.neut_8}`)};
     margin-bottom: 24px;
   }
   .subtitle {
-    ${font(16, 500, `${colors.neut_6}`, 'italic')};
+    ${font(14, 500, `${colors.neut_6}`, 'italic')};
     margin-bottom: 24px;
   }
   .copy {
-    ${font(14, 400, `${colors.neut_6}`)};
+    ${font(12, 400, `${colors.neut_6}`)};
     line-height: 1.05rem;
   }
 `;
