@@ -100,15 +100,32 @@ const Filter = styled.div`
       display: flex;
       align-items: center;
       margin-bottom: 12px;
+      position: relative;
       label {
         ${font(12, 400, `${colors.neut_5}`)};
+        margin-left: 28px;
       }
       input[type='checkbox'] {
         //TODO - Remove browser default styling
-        border-radius: 2px;
-        border: none;
-        height: 16px;
-        width: 16px;
+        appearance: none;
+        &.checkbox {
+          background: ${colors.neut_2};
+          border-radius: 2px;
+          height: 16px;
+          left: 0;
+          position: absolute;
+          top: -5px;
+          width: 16px;
+          &:hover {
+            background: ${colors.prim_3};
+          }
+          &:checked {
+            background: ${colors.prim_5};
+            &:hover {
+              background: ${colors.prim_3};
+            }
+          }
+        }
       }
     }
   }
@@ -173,19 +190,39 @@ const SearchFilterCard = () => (
         </div>
         <div className='checkForm'>
           <div className='checkItem'>
-            <input type='checkbox' name='backgroundOnly' id='backgroundOnly' />
+            <input
+              className='checkbox'
+              type='checkbox'
+              name='backgroundOnly'
+              id='backgroundOnly'
+            />
             <label htmlFor='backgroundOnly'>Show Background Roles only</label>
           </div>
           <div className='checkItem'>
-            <input type='checkbox' name='payingOnly' id='payingOnly' />
+            <input
+              className='checkbox'
+              type='checkbox'
+              name='payingOnly'
+              id='payingOnly'
+            />
             <label htmlFor='payingOnly'>Show Paying Roles only</label>
           </div>
           <div className='checkItem'>
-            <input type='checkbox' name='kidsOnly' id='kidsOnly' />
+            <input
+              className='checkbox'
+              type='checkbox'
+              name='kidsOnly'
+              id='kidsOnly'
+            />
             <label htmlFor='kidsOnly'>Show Kids Roles only</label>
           </div>
           <div className='checkItem'>
-            <input type='checkbox' name='hideReality' id='hideReality' />
+            <input
+              className='checkbox'
+              type='checkbox'
+              name='hideReality'
+              id='hideReality'
+            />
             <label htmlFor='hideReality'>Show Background Roles only</label>
           </div>
         </div>
