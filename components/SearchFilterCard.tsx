@@ -151,10 +151,9 @@ const SearchFilterCard = () => (
         <div className='searchItem'>
           <label htmlFor='searchBy'>Search by:</label>
           <select name='searchBy' id='searchBy'>
-            <option value='option1'>Project title</option>
+            <option value='option1'>Project Title</option>
             <option value='option2'>Casting Director</option>
-            <option value='option3'>test option 3</option>
-            <option value='option4'>test option 4</option>
+            <option value='option3'>Roles</option>
           </select>
         </div>
         <div className='searchItem'>
@@ -164,10 +163,9 @@ const SearchFilterCard = () => (
         <div className='searchItem'>
           <label htmlFor='include'>Include:</label>
           <select name='include' id='include'>
-            <option value='option1'>test option 1</option>
-            <option value='option2'>test option 2</option>
-            <option value='option3'>test option 3</option>
-            <option value='option4'>test option 4</option>
+            <option value='option1'>Current Projects</option>
+            <option value='option2'>Archived Projects</option>
+            <option value='option3'>All Projects</option>
           </select>
         </div>
         <div className='searchItem'>
@@ -182,10 +180,15 @@ const SearchFilterCard = () => (
         <div className='filterItem'>
           <label htmlFor='filterBy'>Filter by:</label>
           <select name='filterBy' id='filterBy'>
-            <option value='option1'>test option 1</option>
-            <option value='option2'>test option 2</option>
-            <option value='option3'>test option 3</option>
-            <option value='option4'>test option 4</option>
+            <option value='breakAll'>All Breakdowns</option>
+            <option value='breakUnion'>Union Breakdowns</option>
+            <option value='breakNonUnion'>Non-Union Breakdowns</option>
+            <option value='#'>-------------</option>
+            <option value='breakForMe'>Breakdowns fit for me</option>
+            <option value='breakForMeUnion'>Union Breakdowns fit for me</option>
+            <option value='breakForMeNonUnion'>
+              Non-Union Breakdowns fit for me
+            </option>
           </select>
         </div>
         <div className='checkForm'>
