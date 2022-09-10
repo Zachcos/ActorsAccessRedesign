@@ -64,21 +64,41 @@ const DetailWrapper = styled.div`
     }
   }
   .secondaryInfo {
-    min-width: 475px;
+    max-width: 500px;
+    width: 100%;
+    p {
+      ${font(12, 400, `${colors.neut_6}`)};
+      line-height: 1.05rem;
+      margin-bottom: 8px;
+      i {
+        font-weight: 900;
+      }
+    }
   }
 `;
 
 const BreakdownWrapper = styled.div`
+  margin-bottom: 200px;
   .bdItem {
-    margin-bottom: 24px;
+    cursor: pointer;
+    margin-bottom: 30px;
     max-width: 900px;
     .role {
       ${font(20, 900, `${colors.neut_8}`)};
       margin-bottom: 8px;
+      text-transform: uppercase;
+      transition: color 0.15s;
+    }
+    &:hover {
+      .role {
+        color: ${colors.prim_5};
+      }
     }
     .description {
       ${font(14, 400, `${colors.neut_6}`)};
+      box-sizing: border-box;
       line-height: 1.05rem;
+      padding-left: 12px;
     }
   }
 `;
@@ -95,8 +115,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
 interface Props {
   gig: GigProps;
-  creative: CreativeProps;
-  roles: RolesProps;
+  creative: CreativeProps[];
+  roles: RolesProps[];
 }
 
 const BreakdownDetail: NextPage<Props> = ({ gig, creative, roles }) => {
@@ -125,64 +145,63 @@ const BreakdownDetail: NextPage<Props> = ({ gig, creative, roles }) => {
       </FinePrint>
       <DetailWrapper>
         <div className='titleWrapper'>
-          <h2 className='title'>A Wonderful World</h2>
+          <h2 className='title'>{gig.title}</h2>
           <p className='datePosted'>
-            <i>Posted:</i> Monday, Aug 1, 2022, 2:24pm Pacific
+            <i>Posted:</i> {gig.datePosted}
           </p>
         </div>
         <div className='primaryInfo'>
           <div className='audition'>
             <p className='audition-venue'>
-              <i>Venue:</i> Pearl Studios
+              <i>Venue:</i> {gig.venue}
             </p>
             <p className='audition-union'>
-              <i>Union:</i> AEA
+              <i>Union:</i> {gig.union}
             </p>
             <p className='audition-dates'>
-              <i>Audition Dates:</i> Immediate Virtual Submissons via Eco Cast
+              <i>Audition Dates:</i> {gig.audDates}
             </p>
             <p className='audition-deadline'>
-              <i>Audition Deadline:</i> August 11, 2022
+              <i>Audition Deadline:</i> {gig.audDeadline}
             </p>
           </div>
           <div className='production'>
             <p className='production-rehDates'>
-              <i>Rehearsal Dates:</i> September 6-20, 2022
+              <i>Rehearsal Dates:</i> {gig.rehDates}
             </p>
             <p className='production-dates'>
-              <i>Production Dates:</i> September 21 - November 12, 2022
+              <i>Production Dates:</i> {gig.prodDates}
             </p>
             <p className='production-pay'>
-              <i>Rate of pay:</i> $1000/wk
+              <i>Rate of pay:</i> {gig.prodPay}
             </p>
             <p className='production-location'>
-              <i>Location:</i> New York, NY
+              <i>Location:</i> {gig.prodLocation}
             </p>
           </div>
         </div>
 
         <div className='secondaryInfo'>
-          <p>INFO COMING SOON</p>
+          {creative.map((item: CreativeProps, index: number) => (
+            <p key={index}>
+              <i>{item.label}:</i> {item.value}
+            </p>
+          ))}
         </div>
       </DetailWrapper>
       <BreakdownWrapper>
-        <div className='bdItem'>
-          <h3 className='role'>[ LOUIS ARMSTRONG ]</h3>
-          <p className='description'>
-            30s-40s, male-identifying, Black. American Icon and International
-            Music Legend. The father of Jazz. Born in the most impoverished and
-            violent part of New Orleans at the beginning of the 20th Century,
-            his mother was a sex-worker, and he never knew his father. He grew
-            up hiding under the pianos in the brothels of Storyville. He wasn't
-            a typically "handsome' man. But had huge charisma, warmth and wit
-            and lived only for his music and blowing his horn. His music was the
-            child he was always longing for.
-          </p>
-        </div>
+        {roles.map((item: RolesProps, index: number) => (
+          <div className='bdItem' key={index}>
+            <h3 className='role'>[ {item.role} ]</h3>
+            <p className='description'>{item.description}</p>
+          </div>
+        ))}
       </BreakdownWrapper>
     </div>
   );
 };
+
+//? - FIGURE OUT THIS ERROR
 
 BreakdownDetail.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
