@@ -1,8 +1,10 @@
 import { ReactElement } from 'react';
+import { NextPage, GetStaticProps } from 'next';
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import Layout from '../components/Layout';
 import AlertCard from '../components/AlertCard';
+import showData from '../data/showData';
 
 const CardCopy = styled.div`
   .title {
@@ -81,7 +83,23 @@ const BreakdownWrapper = styled.div`
   }
 `;
 
-const BreakdownDetail = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      gig: showData.gigInfo,
+      creative: showData.creativeInfo,
+      roles: showData.roles,
+    },
+  };
+};
+
+interface Props {
+  gig: GigProps;
+  creative: CreativeProps;
+  roles: RolesProps;
+}
+
+const BreakdownDetail: NextPage<Props> = ({ gig, creative, roles }) => {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       <AlertCard type={'warn'}>
