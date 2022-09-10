@@ -37,14 +37,18 @@ const Search = styled.div`
         border: none;
         box-sizing: border-box;
         padding: 0 16px;
+        &:focus {
+          outline: 0 none;
+          border: 2px solid ${colors.prim_5};
+        }
       }
       select,
       input[type='date'] {
+        // TODO - Change default date picker?
         height: 42px;
         width: 140px;
       }
       input[type='text'] {
-        // TODO - Change default date picker?
         border-radius: 8px;
         height: 42px;
         width: 200px;
@@ -106,7 +110,6 @@ const Filter = styled.div`
         margin-left: 28px;
       }
       input[type='checkbox'] {
-        //TODO - Remove browser default styling
         appearance: none;
         &.checkbox {
           background: ${colors.neut_2};
@@ -119,10 +122,16 @@ const Filter = styled.div`
           &:hover {
             background: ${colors.prim_3};
           }
+          &:active {
+            background: ${colors.prim_4};
+          }
           &:checked {
             background: ${colors.prim_5};
             &:hover {
               background: ${colors.prim_3};
+            }
+            &:active {
+              background: ${colors.prim_4};
             }
           }
         }
