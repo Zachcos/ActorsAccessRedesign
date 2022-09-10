@@ -21,15 +21,15 @@ const CardCopy = styled.div`
 
 const FinePrint = styled.div`
   ${font(12, 400, `${colors.neut_5}`)};
-  max-width: 400px;
   line-height: 1.05rem;
-  margin-top: 8px;
   margin-left: 48px;
+  margin-top: 8px;
+  max-width: 450px;
 `;
 
 const BreakdownDetail = () => {
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       <AlertCard type={'warn'}>
         <CardCopy>
           <p className='title'>Submission Instructions</p>
@@ -51,6 +51,58 @@ const BreakdownDetail = () => {
         submitting talent for available roles. Copyright © 2022 Breakdown
         Services, Ltd. All Rights reserved.
       </FinePrint>
+      <DetailWrapper>
+        <h2 className='title'>A Wonderful World</h2>
+        <span className='datePosted'>
+          <i>Posted:</i> Monday, Aug 1, 2022, 2:24pm Pacific
+        </span>
+        <div className='primaryInfo'>
+          <div className='audition'>
+            <span className='audition-venue'>
+              <i>Venue:</i> Pearl Studios
+            </span>
+            <span className='audition-dates'>
+              <i>Audition Dates:</i> Immediate Virtual Submissons via Eco Cast
+            </span>
+            <span className='audition-deadline'>
+              <i>Audition Deadline:</i> August 11, 2022
+            </span>
+          </div>
+          <div className='production'>
+            <span className='production-rehDates'>
+              <i>Rehearsal Dates:</i> September 6-20, 2022
+            </span>
+            <span className='production-dates'>
+              <i>Production Dates:</i> September 21 - November 12, 2022
+            </span>
+            <span className='production-pay'>
+              <i>Rate of pay:</i> $1000/wk
+            </span>
+            <span className='production-location'>
+              <i>Location:</i> New York, NY
+            </span>
+          </div>
+
+          <div className='secondaryInfo'>
+            <p>INFO COMING SOON</p>
+          </div>
+        </div>
+      </DetailWrapper>
+      <BreakdownWrapper>
+        <div className='bdItem'>
+          <h3 className='role'>[ LOUIS ARMSTRONG ]</h3>
+          <p className='description'>
+            30s-40s, male-identifying, Black. American Icon and International
+            Music Legend. The father of Jazz. Born in the most impoverished and
+            violent part of New Orleans at the beginning of the 20th Century,
+            his mother was a sex-worker, and he never knew his father. He grew
+            up hiding under the pianos in the brothels of Storyville. He wasn't
+            a typically "handsome' man. But had huge charisma, warmth and wit
+            and lived only for his music and blowing his horn. His music was the
+            child he was always longing for.
+          </p>
+        </div>
+      </BreakdownWrapper>
     </div>
   );
 };
