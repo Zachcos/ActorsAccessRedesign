@@ -78,7 +78,7 @@ const DetailWrapper = styled.div`
 `;
 
 const BreakdownWrapper = styled.div`
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   .bdItem {
     cursor: pointer;
     margin-bottom: 30px;
@@ -202,7 +202,6 @@ const BreakdownDetail: NextPage<Props> = ({ gig, creative, roles }) => {
 };
 
 //? - FIGURE OUT THIS ERROR
-
 BreakdownDetail.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
