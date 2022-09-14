@@ -12,6 +12,7 @@ const SideBarWrapper = styled.div`
   height: 100vh;
   position: fixed;
   width: 180px;
+  z-index: 1;
   .heroText {
     ${font(24, 900, `${colors.prim_5}`)};
     margin: 24px 0 32px 0;
