@@ -9,6 +9,7 @@ const CardWrapper = styled.div`
   display: flex;
   height: 280px;
   width: 900px;
+  z-index: -1;
 `;
 
 const Search = styled.div`
