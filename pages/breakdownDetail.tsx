@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { NextPage, GetStaticProps } from 'next';
+import { GetStaticProps } from 'next';
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import Layout from '../components/Layout';
@@ -119,7 +119,7 @@ interface Props {
   roles: RolesProps[];
 }
 
-const BreakdownDetail: NextPage<Props> = ({ gig, creative, roles }) => {
+const BreakdownDetail = ({ gig, creative, roles }: Props) => {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       <AlertCard type={'warn'}>
@@ -201,7 +201,6 @@ const BreakdownDetail: NextPage<Props> = ({ gig, creative, roles }) => {
   );
 };
 
-//? - FIGURE OUT THIS ERROR
 BreakdownDetail.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
