@@ -1,4 +1,4 @@
-const menuItems: ItemProps[] = [
+const menuItems: MenuItemProps[] = [
   {
     title: 'home',
     url: '/',
