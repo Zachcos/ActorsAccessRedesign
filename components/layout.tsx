@@ -1,4 +1,4 @@
-import SideBar from './sideBar';
+import SideBar from './SideBar';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
