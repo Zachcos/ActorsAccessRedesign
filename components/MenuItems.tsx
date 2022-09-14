@@ -55,11 +55,13 @@ const MenuItems = ({ items, depthLevel }: Props) => {
   let ref = useRef<HTMLLIElement>(null);
 
   const onMouseEnter = () => {
-    window.innerWidth > 960 && setDropdown(true);
+    // window.innerWidth > 960 &&
+    setDropdown(true);
   };
 
   const onMouseLeave = () => {
-    window.innerWidth > 960 && setDropdown(false);
+    // window.innerWidth > 960 &&
+    setDropdown(false);
   };
 
   return (
