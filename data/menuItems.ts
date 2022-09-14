@@ -10,11 +10,11 @@ const menuItems: ItemProps[] = [
         title: 'United States',
         submenu: [
           {
-            title: 'New York',
+            title: 'Los Angeles',
             url: '#',
           },
           {
-            title: 'Los Angeles',
+            title: 'New York',
             url: '#',
           },
           {
