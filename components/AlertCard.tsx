@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, font } from '../styles/variables';
+import { colors } from '../styles/variables';
 import { Warning, Info } from '../styles/icons';
 
 const Card = styled.div`

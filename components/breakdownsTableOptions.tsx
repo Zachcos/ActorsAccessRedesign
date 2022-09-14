@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
-import { CheckMark, Arrow } from '../styles/icons';
+import { CheckMark } from '../styles/icons';
 import PaginationButtons from './PaginationButtons';
 
 const TableOptions = styled.div`
