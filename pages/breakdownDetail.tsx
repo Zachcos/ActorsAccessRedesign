@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { GetStaticProps } from 'next';
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import AlertCard from '../components/AlertCard';
 import showData from '../data/showData';
 
