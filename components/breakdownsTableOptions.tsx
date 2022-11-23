@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors, font } from '../styles/variables';
 import { CheckMark } from '../styles/icons';
-import PaginationButtons from './PaginationButtons';
+import PaginationButtons from './paginationButtons';
 
 const TableOptions = styled.div`
   align-items: end;
